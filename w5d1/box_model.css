@@ -1,0 +1,41 @@
+div {
+}
+
+#first-div {
+  background-color: #39cccc;
+  height: 200px;
+  width: 200px;
+  border: 5px dotted black;
+}
+
+#second-div {
+  background-color: #ff4136;
+  height: 200px;
+  width: 200px;
+  border: 5px dotted black;
+  box-sizing: border-box;
+
+}
+
+p {
+  background-color: #7fdbff;
+  display: inline;
+}
+
+#third-div {
+  background-color: aquamarine;
+  length: 400px;
+}
+
+.img-1-container {
+  background-color: blueviolet;
+  width: 200px;
+  height: 600px;
+}
+#first {
+  width: 100%;
+}
+.img-2-container{
+  width: 200px;
+  display: inline-block ;
+}

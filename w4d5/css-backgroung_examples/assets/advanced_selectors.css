@@ -56,10 +56,13 @@ input[type="submit"]:hover {
    -webkit-filter: brightness(70%);
 }
 
-ol li:nth-of-type(2n) {
+ol li:nth-of-type(odd) {
   background-color: lightgrey;
 }
 
+.ingredients-list li:nth-of-type(even) {
+  color: red
+}
 
 
 
