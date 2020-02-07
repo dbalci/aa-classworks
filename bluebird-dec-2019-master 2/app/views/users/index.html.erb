@@ -1,0 +1,23 @@
+<h1>Here are all of our Users!!!!!</h1>
+<ul>
+    <% @users.each do |user| %>
+        <li>
+            <ul>
+                <li><%= user.username %></li>
+                <li><%= user.age %></li>
+                <li><%= user.email %></li>
+                <li><a href="<%= user_url(user) %>"><%= user.username %></a></li> 
+                <li><a href="<%= edit_user_url(user) %>">Edit User</a></li>
+                <li>
+                    <form action="<%= user_url(user) %>" method="POST"> 
+                        <input type="hidden" name="_method" value="DELETE">
+                        <input type="submit" value="Delete Wizard">
+                    </form>
+                </li>
+                <li><a href="<%= user_chirps_url(user.id) %>"><%= user.username %>'s Chirps</a></li>
+            </ul>
+        </li>
+        <br>
+    <% end %>
+    
+</ul>
